@@ -1,0 +1,13 @@
+@import 'fonts';
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    width: 375px;
+    border: solid 1px black;
+}
+
+@import 'index';

@@ -1,0 +1,201 @@
+/*-----------------
+-       HEADER     -
+------------------*/
+header {
+  height: 42px;
+}
+header h1 img {
+  display: block;
+  margin: auto;
+  width: 45%;
+}
+
+/*-----------------
+-       MAIN      -
+------------------*/
+#intro {
+  display: flex;
+  flex-direction: column;
+}
+#intro #localisation {
+  background-color: rgb(239, 239, 239);
+  height: 50px;
+}
+#intro #localisation i {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(55, 55, 55);
+}
+#intro #localisation i span {
+  font-size: 16px;
+  margin: 0 20px;
+}
+#intro #explore {
+  display: flex;
+  flex-direction: column;
+  background-color: #f6f6f6;
+  height: 287px;
+  padding: 35px 30px;
+}
+#intro #explore h2 {
+  font-size: 24px;
+  font-weight: 1800;
+  text-align: center;
+  margin: 10px 25px 0 25px;
+}
+#intro #explore p {
+  font-size: 18px;
+  text-align: center;
+  color: rgb(55, 55, 55);
+}
+#intro #explore button {
+  box-shadow: 0px 6px 7px 0px #d4d4d4;
+  background: linear-gradient(to bottom, #ff79d9 5%, #9256dc 100%);
+  background-color: #ff79d9;
+  border-radius: 28px;
+  border: none;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 16px;
+  margin: 5px 45px 0 45px;
+  text-decoration: none;
+}
+#intro #explore button:hover {
+  background: linear-gradient(to bottom, #9256dc 5%, #ff79d9 100%);
+  background-color: #9256dc;
+}
+
+nav {
+  height: 440px;
+  padding: 45px 0;
+}
+nav h2 {
+  font-size: 23px;
+  font-weight: bolder;
+  margin: 0px 20px;
+}
+nav #filtre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0 50px 0;
+}
+nav #filtre button {
+  width: 310px;
+  height: 75px;
+  border-radius: 17px;
+  box-shadow: 0px 6px 7px 0px #d4d4d4;
+  border: none;
+  background-color: #f6f6f6;
+  margin: 10px auto;
+  color: rgb(118, 118, 118);
+}
+nav #filtre button p {
+  float: left;
+  position: relative;
+  left: -18px;
+  font-size: 15px;
+  color: white;
+  background-color: #9256dc;
+  padding: 5px 8px;
+  border-radius: 50%;
+}
+nav #filtre button i {
+  margin-top: 17px;
+  margin-right: 15px;
+}
+nav #filtre button span {
+  font-size: 16px;
+  margin: 0 20px;
+  color: black;
+}
+nav #filtre button:hover {
+  background-color: rgba(147, 86, 220, 0.13);
+}
+
+#restaurant {
+  background-color: #f6f6f6;
+  padding: 55px 0 40px;
+}
+#restaurant h2 {
+  font-size: 23px;
+  font-weight: bolder;
+  margin: 0px 20px;
+}
+#restaurant .card {
+  background-color: white;
+  width: 330px;
+  height: 250px;
+  margin: 25px auto;
+  box-shadow: 0px 6px 7px 0px #d4d4d4;
+  border-radius: 15px;
+  display: grid;
+  grid-template: 70% 30%/70% 30%;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+#restaurant .card img {
+  width: 330px;
+  height: 175px;
+  border-radius: 15px 15px 0 0;
+  grid-area: 1/1/1/2;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#restaurant .card .description {
+  grid-area: 2/1;
+}
+#restaurant .card .description h3 {
+  margin: 13px 10px 5px 10px;
+  font-size: 18px;
+}
+#restaurant .card .description address {
+  font-style: normal;
+  font-size: 17px;
+  margin: 0 10px;
+}
+#restaurant .card i {
+  grid-area: 2/2;
+  margin: 15px auto;
+  font-size: 25px;
+}
+#restaurant .card .new {
+  grid-area: 1/2;
+  background-color: #99e2d0;
+  height: 30px;
+  padding: 7px;
+  margin: 13px;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #0f9070;
+}
+
+footer {
+  height: 165px;
+  background-color: #323232;
+}
+footer h2 {
+  margin: 0;
+  padding: 22px;
+  font-family: "Shrikhand";
+  color: white;
+  font-size: 17px;
+  font-weight: lighter;
+}
+footer #footerlinks {
+  display: flex;
+  flex-direction: column;
+}
+footer #footerlinks a {
+  color: white;
+  text-decoration: none;
+  padding: 3px 25px;
+}
+footer #footerlinks a i {
+  margin-right: 10px;
+  font-size: 12px;
+}/*# sourceMappingURL=index.css.map */
