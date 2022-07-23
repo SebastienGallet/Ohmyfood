@@ -1,0 +1,25 @@
+footer {
+  height: 165px;
+  background-color: #323232;
+}
+footer h2 {
+  margin: 0;
+  padding: 22px;
+  font-family: "Shrikhand";
+  color: white;
+  font-size: 17px;
+  font-weight: lighter;
+}
+footer #footerlinks {
+  display: flex;
+  flex-direction: column;
+}
+footer #footerlinks a {
+  color: white;
+  text-decoration: none;
+  padding: 3px 25px;
+}
+footer #footerlinks a i {
+  margin-right: 10px;
+  font-size: 12px;
+}/*# sourceMappingURL=footer.css.map */

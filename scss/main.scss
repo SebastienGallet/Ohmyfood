@@ -1,13 +1,12 @@
-@import 'fonts';
+@import 'base/fonts.scss';
+@import 'base/typographie.scss';
+@import 'layout/header.scss';
+@import 'layout/footer.scss';
+@import 'utils/mixins.scss';
+@import 'utils/variables.scss';
+@import 'components/buttons.scss';
+@import 'components/coeur.scss';
+@import 'components/loading-spinner.scss';
+@import 'pages/index.scss';
+@import 'pages/menu.scss';
 
-* {
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-}
-
-body{
-    width: 375px;
-    border: solid 1px black;
-}
-
-@import 'index';

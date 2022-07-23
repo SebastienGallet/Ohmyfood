@@ -1,0 +1,99 @@
+@import '../utils/mixins.scss';
+@import '../utils/variables.scss';
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+#picture{
+    height: 220px;
+    img{
+        width: 100%;
+        height: 115%;
+        object-fit: cover;
+    }
+}
+
+section{
+    padding: 38px 14px;
+    border-radius: 40px 40px 0 0;
+    background-color: $background-color;
+    #restoname{
+        display: flex;
+        justify-content: space-between;
+        h2{
+            font-family: 'Shrikhand';
+            font-weight: lighter;
+            font-size: 28px;
+            margin: 0;
+        }
+        i{
+            font-size: 25px;
+            margin-right: 15px;
+        }
+    }
+    .carte{
+        display: flex;
+        flex-direction: column;
+        margin: 14px 0;
+        h3{
+            font-size: 16px;
+            font-weight: lighter;
+            margin-bottom: 3px;
+        }
+        #greenborder{
+            height: 3px;
+            width: 45px;
+            background-color: $green;
+        }
+        .menu{
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+            button{
+                display: grid;
+                grid-template: 50% 50% / 80% 20%;
+                height: 67px;
+                background-color: white;
+                border: none;
+                border-radius: 15px;
+                @include ombre;
+                margin-bottom: 15px;
+                padding: 12px 10px;
+                cursor: pointer;
+                em{
+                    grid-area: 1/1;
+                    font-size: 17px;
+                    font-style: normal;
+                    font-weight: bold;
+                    display: flex;
+                    justify-content: flex-start;
+                }
+                p{
+                    grid-area: 2/1;
+                    margin: 5px 0 0 0;
+                    display: flex;
+                    justify-content: flex-start;
+                    font-size: 15px;
+                }
+                .price{
+                    grid-area: 2/2;
+                    font-size: 15px;
+                    font-weight: bolder;
+                    display: flex;
+                    justify-content: flex-end;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+    #commander{
+        @include button-template;
+        width: 180px;
+        display: flex;
+        justify-content: center;
+        margin: 30px auto;
+    }
+}
+

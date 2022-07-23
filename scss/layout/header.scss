@@ -1,0 +1,17 @@
+@import '../utils/variables.scss';
+
+header{
+    height: 42px;
+    h1 img{
+        display: block;
+        margin: auto;
+        width: 45%;
+    }
+    #fleche{
+        position: absolute;
+        font-size: 20px;
+        top: 25px;
+        left: 25px;
+        color: $grey-icon;
+    }
+ }
