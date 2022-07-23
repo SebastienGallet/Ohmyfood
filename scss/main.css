@@ -208,7 +208,7 @@ nav #filtre button:hover {
 #restaurant .card .new {
   grid-area: 1/2;
   background-color: #99e2d0;
-  height: 30px;
+  height: 15px;
   padding: 7px;
   margin: 13px;
   border-radius: 3px;
