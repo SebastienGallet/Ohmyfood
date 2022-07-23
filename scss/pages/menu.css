@@ -13,46 +13,46 @@ main {
      object-fit: cover;
 }
 
-section {
+#repas {
   padding: 38px 14px;
   border-radius: 40px 40px 0 0;
   background-color: #f6f6f6;
 }
-section #restoname {
+#repas #restoname {
   display: flex;
   justify-content: space-between;
 }
-section #restoname h2 {
+#repas #restoname h2 {
   font-family: "Shrikhand";
   font-weight: lighter;
   font-size: 28px;
   margin: 0;
 }
-section #restoname i {
+#repas #restoname i {
   font-size: 25px;
   margin-right: 15px;
 }
-section .carte {
+#repas .carte {
   display: flex;
   flex-direction: column;
   margin: 14px 0;
 }
-section .carte h3 {
+#repas .carte h3 {
   font-size: 16px;
   font-weight: lighter;
   margin-bottom: 3px;
 }
-section .carte #greenborder {
+#repas .carte #greenborder {
   height: 3px;
   width: 45px;
   background-color: #99e2d0;
 }
-section .carte .menu {
+#repas .carte .menu {
   display: flex;
   flex-direction: column;
   margin-top: 20px;
 }
-section .carte .menu button {
+#repas .carte .menu button {
   display: grid;
   grid-template: 50% 50%/80% 20%;
   height: 67px;
@@ -64,7 +64,7 @@ section .carte .menu button {
   padding: 12px 10px;
   cursor: pointer;
 }
-section .carte .menu button em {
+#repas .carte .menu button em {
   grid-area: 1/1;
   font-size: 17px;
   font-style: normal;
@@ -72,14 +72,14 @@ section .carte .menu button em {
   display: flex;
   justify-content: flex-start;
 }
-section .carte .menu button p {
+#repas .carte .menu button p {
   grid-area: 2/1;
   margin: 5px 0 0 0;
   display: flex;
   justify-content: flex-start;
   font-size: 15px;
 }
-section .carte .menu button .price {
+#repas .carte .menu button .price {
   grid-area: 2/2;
   font-size: 15px;
   font-weight: bolder;
@@ -87,7 +87,7 @@ section .carte .menu button .price {
   justify-content: flex-end;
   margin-right: 10px;
 }
-section #commander {
+#repas #commander {
   background: linear-gradient(to bottom, #ff79d9 5%, #9256dc 100%);
   background-color: #ff79d9;
   border-radius: 28px;
@@ -103,7 +103,7 @@ section #commander {
   justify-content: center;
   margin: 30px auto;
 }
-section #commander:hover {
+#repas #commander:hover {
   background: linear-gradient(to bottom, #9256dc 5%, #ff79d9 100%);
   background-color: #9256dc;
 }/*# sourceMappingURL=menu.css.map */
