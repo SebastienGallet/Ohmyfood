@@ -1,5 +1,6 @@
 @import '../utils/mixins.scss';
 @import '../utils/variables.scss';
+@import '../components/buttons.scss';
 
 main{
     display: flex;
@@ -51,40 +52,11 @@ main{
             display: flex;
             flex-direction: column;
             margin-top: 20px;
+            width: 100%;
+            overflow: hidden;
             button{
-                display: grid;
-                grid-template: 50% 50% / 80% 20%;
-                height: 67px;
-                background-color: white;
-                border: none;
-                border-radius: 15px;
-                @include ombre;
-                margin-bottom: 15px;
-                padding: 12px 10px;
-                cursor: pointer;
-                em{
-                    grid-area: 1/1;
-                    font-size: 17px;
-                    font-style: normal;
-                    font-weight: bold;
-                    display: flex;
-                    justify-content: flex-start;
-                }
-                p{
-                    grid-area: 2/1;
-                    margin: 5px 0 0 0;
-                    display: flex;
-                    justify-content: flex-start;
-                    font-size: 15px;
-                }
-                .price{
-                    grid-area: 2/2;
-                    font-size: 15px;
-                    font-weight: bolder;
-                    display: flex;
-                    justify-content: flex-end;
-                    margin-right: 10px;
-                }
+                @include button;
+                @include animationcheck;
             }
         }
     }
