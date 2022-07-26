@@ -43,7 +43,7 @@ main{
             font-weight: lighter;
             margin-bottom: 3px;
         }
-        #greenborder{
+        .greenborder{
             height: 3px;
             width: 45px;
             background-color: $green;
@@ -54,7 +54,7 @@ main{
             margin-top: 20px;
             width: 100%;
             overflow: hidden;
-            button{
+            .buttonfood{
                 @include button;
                 @include animationcheck;
             }
