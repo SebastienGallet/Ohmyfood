@@ -47,10 +47,14 @@
   padding: 16px;
   margin: 5px 45px 0 45px;
   text-decoration: none;
+  transform: scale(1);
+  transition: 400ms;
 }
 #intro #explore button:hover {
   background: linear-gradient(to bottom, #9256dc 5%, #ff79d9 100%);
   background-color: #9256dc;
+  transform: scale(1.05);
+  transition: 400ms;
 }
 
 nav {

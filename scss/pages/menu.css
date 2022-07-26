@@ -42,7 +42,7 @@ main {
   font-weight: lighter;
   margin-bottom: 3px;
 }
-#repas .carte #greenborder {
+#repas .carte .greenborder {
   height: 3px;
   width: 45px;
   background-color: #99e2d0;
@@ -54,7 +54,7 @@ main {
   width: 100%;
   overflow: hidden;
 }
-#repas .carte .menu button {
+#repas .carte .menu .buttonfood {
   display: flex;
   height: 67px;
   background-color: white;
@@ -65,36 +65,37 @@ main {
   overflow: hidden;
   cursor: pointer;
 }
-#repas .carte .menu button .description {
+#repas .carte .menu .buttonfood .description {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   width: 100%;
   height: 100%;
 }
-#repas .carte .menu button .description em {
+#repas .carte .menu .buttonfood .description em {
   font-size: 17px;
   font-style: normal;
   font-weight: bold;
   display: flex;
   justify-content: flex-start;
+  margin: 10px 0 0 8px;
 }
-#repas .carte .menu button .description p {
-  margin: 5px 0 0 0;
+#repas .carte .menu .buttonfood .description p {
+  margin: 5px 0 10px 8px;
   display: flex;
   justify-content: flex-start;
   font-size: 15px;
 }
-#repas .carte .menu button .price {
+#repas .carte .menu .buttonfood .price {
   display: flex;
   align-items: flex-end;
+  height: 85%;
   font-size: 15px;
   font-weight: bolder;
-  max-width: 100%;
-  height: 100%;
+  margin-right: 20px;
 }
-#repas .carte .menu button .check {
-  min-width: 70px;
+#repas .carte .menu .buttonfood .check {
+  min-width: 65px;
   background: #99e2d0;
   display: flex;
   justify-content: center;
@@ -103,18 +104,18 @@ main {
   margin: -1px -76px 0 0;
   border-radius: 0 15px 15px 0;
 }
-#repas .carte .menu button .check i {
+#repas .carte .menu .buttonfood .check i {
   color: #99e2d0;
   padding: 6px;
   border-radius: 50%;
   background: white;
 }
-#repas .carte .menu button:hover .check {
+#repas .carte .menu .buttonfood:hover .check {
   margin-right: -6px;
   transition-duration: 0.5s;
   transition-timing-function: ease;
 }
-#repas .carte .menu button:hover i {
+#repas .carte .menu .buttonfood:hover i {
   transform: rotate(360deg);
   transition: 500ms;
 }
@@ -129,6 +130,8 @@ main {
   padding: 16px;
   margin: 5px 45px 0 45px;
   text-decoration: none;
+  transform: scale(1);
+  transition: 400ms;
   width: 180px;
   display: flex;
   justify-content: center;
@@ -137,4 +140,6 @@ main {
 #repas #commander:hover {
   background: linear-gradient(to bottom, #9256dc 5%, #ff79d9 100%);
   background-color: #9256dc;
+  transform: scale(1.05);
+  transition: 400ms;
 }/*# sourceMappingURL=menu.css.map */

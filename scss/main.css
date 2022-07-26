@@ -280,7 +280,7 @@ main {
   width: 100%;
   overflow: hidden;
 }
-#repas .carte .menu button {
+#repas .carte .menu .buttonfood {
   display: flex;
   height: 67px;
   background-color: white;
@@ -291,14 +291,14 @@ main {
   overflow: hidden;
   cursor: pointer;
 }
-#repas .carte .menu button .description {
+#repas .carte .menu .buttonfood .description {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   width: 100%;
   height: 100%;
 }
-#repas .carte .menu button .description em {
+#repas .carte .menu .buttonfood .description em {
   font-size: 17px;
   font-style: normal;
   font-weight: bold;
@@ -306,13 +306,13 @@ main {
   justify-content: flex-start;
   margin: 10px 0 0 8px;
 }
-#repas .carte .menu button .description p {
+#repas .carte .menu .buttonfood .description p {
   margin: 5px 0 10px 8px;
   display: flex;
   justify-content: flex-start;
   font-size: 15px;
 }
-#repas .carte .menu button .price {
+#repas .carte .menu .buttonfood .price {
   display: flex;
   align-items: flex-end;
   height: 85%;
@@ -320,7 +320,7 @@ main {
   font-weight: bolder;
   margin-right: 20px;
 }
-#repas .carte .menu button .check {
+#repas .carte .menu .buttonfood .check {
   min-width: 65px;
   background: #99e2d0;
   display: flex;
@@ -330,18 +330,18 @@ main {
   margin: -1px -76px 0 0;
   border-radius: 0 15px 15px 0;
 }
-#repas .carte .menu button .check i {
+#repas .carte .menu .buttonfood .check i {
   color: #99e2d0;
   padding: 6px;
   border-radius: 50%;
   background: white;
 }
-#repas .carte .menu button:hover .check {
+#repas .carte .menu .buttonfood:hover .check {
   margin-right: -6px;
   transition-duration: 0.5s;
   transition-timing-function: ease;
 }
-#repas .carte .menu button:hover i {
+#repas .carte .menu .buttonfood:hover i {
   transform: rotate(360deg);
   transition: 500ms;
 }
