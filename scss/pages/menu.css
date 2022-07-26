@@ -62,13 +62,15 @@ main {
   border-radius: 15px;
   box-shadow: 0px 6px 7px 0px #d4d4d4;
   margin-bottom: 15px;
+  overflow: hidden;
   cursor: pointer;
 }
 #repas .carte .menu button .description {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   width: 100%;
-  overflow: hidden;
+  height: 100%;
 }
 #repas .carte .menu button .description em {
   font-size: 17px;
@@ -97,8 +99,8 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 102%;
-  margin-right: -74px;
+  height: 67px;
+  margin: -1px -76px 0 0;
   border-radius: 0 15px 15px 0;
 }
 #repas .carte .menu button .check i {
