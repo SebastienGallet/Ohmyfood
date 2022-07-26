@@ -12,9 +12,6 @@ body {
   border: solid 1px black;
 }
 
-header {
-  height: 42px;
-}
 header h1 img {
   display: block;
   margin: auto;
