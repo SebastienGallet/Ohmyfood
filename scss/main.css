@@ -7,15 +7,21 @@
 font-family: 'Roboto', sans-serif;
 font-family: 'Shrikhand', cursive;
 */
+@media screen and (max-width: 375px) {
+  body {
+    border: solid 1px black;
+  }
+}
 body {
-  width: 375px;
-  border: solid 1px black;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 header h1 img {
   display: block;
   margin: auto;
   width: 45%;
+  max-width: 200px;
 }
 header #fleche {
   position: absolute;
@@ -320,13 +326,13 @@ main {
   margin-right: 20px;
 }
 #repas .carte .menu .buttonfood .check {
-  min-width: 65px;
+  min-width: 68px;
+  height: 68px;
   background: #99e2d0;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 67px;
-  margin: -1px -76px 0 0;
+  margin-right: -70px;
   border-radius: 0 15px 15px 0;
 }
 #repas .carte .menu .buttonfood .check i {
@@ -336,7 +342,7 @@ main {
   background: white;
 }
 #repas .carte .menu .buttonfood:hover .check {
-  margin-right: -6px;
+  margin-right: 0px;
   transition-duration: 0.5s;
   transition-timing-function: ease;
 }
@@ -367,4 +373,24 @@ main {
   background-color: #9256dc;
   transform: scale(1.05);
   transition: 400ms;
+}
+
+@media screen and (min-width: 900px) {
+  #repas .carte .menu {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #repas .carte .menu .buttonfood {
+    width: 30%;
+  }
+  footer h2 {
+    display: flex;
+    justify-content: center;
+  }
+  footer #footerlinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 25px;
+  }
 }/*# sourceMappingURL=main.css.map */

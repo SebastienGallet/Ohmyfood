@@ -1,0 +1,19 @@
+@media screen and (min-width: 900px) {
+  #repas .carte .menu {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #repas .carte .menu .buttonfood {
+    width: 30%;
+  }
+  footer h2 {
+    display: flex;
+    justify-content: center;
+  }
+  footer #footerlinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 25px;
+  }
+}/*# sourceMappingURL=responsive.css.map */

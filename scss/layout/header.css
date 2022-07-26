@@ -2,6 +2,7 @@ header h1 img {
   display: block;
   margin: auto;
   width: 45%;
+  max-width: 200px;
 }
 header #fleche {
   position: absolute;

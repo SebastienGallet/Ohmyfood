@@ -38,13 +38,13 @@
         margin-right: 20px;
     }
     .check{
-        min-width: 65px;
+        min-width: 68px;
+        height: 68px;
 	    background: #99e2d0;
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 67px;
-        margin: -1px -76px 0 0;
+        margin-right:-70px;
         border-radius: 0 15px 15px 0;
         i{
             color: #99e2d0;
@@ -57,7 +57,7 @@
 
 @mixin animationcheck {
     &:hover .check{
-        margin-right: -6px;
+        margin-right: 0px;
 	    transition-duration: 0.5s;
         transition-timing-function: ease;   
    }
