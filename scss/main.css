@@ -85,7 +85,6 @@ footer #footerlinks a i {
 }
 #intro #explore h2 {
   font-size: 24px;
-  font-weight: 1800;
   text-align: center;
   margin: 10px 25px 0 25px;
 }
@@ -268,7 +267,7 @@ main {
   font-weight: lighter;
   margin-bottom: 3px;
 }
-#repas .carte #greenborder {
+#repas .carte .greenborder {
   height: 3px;
   width: 45px;
   background-color: #99e2d0;
