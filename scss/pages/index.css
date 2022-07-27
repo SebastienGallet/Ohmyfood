@@ -20,6 +20,7 @@
 #intro #explore {
   display: flex;
   flex-direction: column;
+  align-items: center;
   background-color: #f6f6f6;
   height: 217px;
   padding: 35px 30px;
@@ -80,6 +81,12 @@ nav #filtre button {
   background-color: #f6f6f6;
   margin: 10px auto;
   color: rgb(118, 118, 118);
+  transform: scale(1);
+  transition: 400ms;
+}
+nav #filtre button:hover {
+  transform: scale(1.05);
+  transition: 400ms;
 }
 nav #filtre button p {
   float: left;
@@ -126,12 +133,18 @@ nav #filtre button:hover {
   grid-row-gap: 0px;
   text-decoration: none;
   color: black;
+  transform: scale(1);
+  transition: 400ms;
+}
+#restaurant .card:hover {
+  transform: scale(1.05);
+  transition: 400ms;
 }
 #restaurant .card img {
   width: 330px;
   height: 175px;
   border-radius: 15px 15px 0 0;
-  grid-area: 1/1/1/2;
+  grid-area: 1/1/1/3;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -156,8 +169,10 @@ nav #filtre button:hover {
   grid-area: 1/2;
   background-color: #99e2d0;
   height: 15px;
+  max-width: 60px;
+  text-align: center;
   padding: 7px;
-  margin: 13px;
+  margin: 13px auto;
   border-radius: 3px;
   font-size: 14px;
   font-weight: bold;

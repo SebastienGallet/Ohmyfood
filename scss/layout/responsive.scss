@@ -1,16 +1,51 @@
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 700px) {
+    /*-----INDEX------*/
+    #explore{
+        button{
+            width: 300px;
+        }
+    }
+
+    nav{
+        height: auto;
+        #filtre{
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    }
+
+        #restaurant{
+            #restocards{
+                display: flex;
+                flex-wrap: wrap;
+                a{
+                    width: 45%;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+    
+        /*-----PAGE DE RESTO------*/
     #repas{
     .carte{
         .menu{
             flex-direction: row;
             justify-content: space-between;
+            flex-wrap: wrap;
             .buttonfood{
                 width: 30%;
+                min-width: 330px;
+                margin: 15px auto;
             }
         }
     }
    }
 
+
+   /*-----FOOTER------*/
    footer{
     h2{
         display: flex;

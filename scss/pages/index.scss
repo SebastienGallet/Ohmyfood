@@ -22,6 +22,7 @@
     #explore{
         display: flex;
         flex-direction: column;
+        align-items: center;
         background-color: $background-color;
         height: 217px;
         padding: 35px 30px;
@@ -62,6 +63,12 @@ nav{
             background-color: $background-color;
             margin: 10px auto;
             color: rgb(118, 118, 118);
+            transform: scale(1);
+            transition: 400ms;
+            &:hover{
+                transform: scale(1.05);
+                transition: 400ms;
+            }
             p{
                 float: left;
                 position: relative;
@@ -108,12 +115,18 @@ nav{
         grid-row-gap: 0px;
         text-decoration: none;
         color: black;
+        transform: scale(1);
+        transition: 400ms;
+        &:hover{
+            transform: scale(1.05);
+            transition: 400ms;
+        }
 
         img{
             width: 330px;
             height: 175px;
             border-radius: 15px 15px 0 0;
-            grid-area: 1 / 1 / 1 / 2;
+            grid-area: 1 / 1 / 1 / 3;
             object-fit: cover;
         }
         .description{
@@ -137,8 +150,10 @@ nav{
             grid-area: 1 / 2;
             background-color: #99e2d0;
             height: 15px;
+            max-width: 60px;
+            text-align: center;
             padding: 7px;
-            margin: 13px;
+            margin: 13px auto;
             border-radius: 3px;
             font-size: 14px;
             font-weight: bold;
