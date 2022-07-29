@@ -1,8 +1,5 @@
 @media screen and (min-width: 700px) {
   /*-----INDEX------*/
-  #explore button {
-    width: 300px;
-  }
   nav {
     height: auto;
   }
