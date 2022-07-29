@@ -1,5 +1,6 @@
 #loader {
   width: 100%;
+  max-width: 1280px;
   height: 100%;
   position: fixed;
   background-color: white;
@@ -15,6 +16,8 @@
   z-index: 1;
 }
 #loader #loading {
+  display: flex;
+  justify-content: center;
   width: 100px;
   height: 100px;
   -webkit-animation: loading 1s ease-in-out;
