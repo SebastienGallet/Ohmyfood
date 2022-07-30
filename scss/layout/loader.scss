@@ -1,0 +1,43 @@
+@import '../utils/mixins.scss';
+@import '../utils/variables.scss';
+
+#loader{
+    width: 100%;
+    max-width: 1280px;
+    height: 100%;
+    position: fixed;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: loader 0.1s;
+    animation-delay: 2.9s;
+    animation-fill-mode: both;
+    z-index: 1;
+    #loading{
+        display: flex;
+        justify-content: center;
+        width: 100px;
+        height: 100px;
+        animation: loading 1s ease-in-out;
+        border-radius: 50%;
+        border: 6px solid $purple;
+        border-bottom: 6px solid $pink;
+        animation-iteration-count: 3;
+    }
+}
+@keyframes loading {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes loader{
+    100%{
+        opacity: 0;
+        z-index: -1;
+    }
+}

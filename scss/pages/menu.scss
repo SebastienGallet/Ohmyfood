@@ -29,9 +29,9 @@ main{
             font-size: 28px;
             margin: 0;
         }
-        i{
-            font-size: 25px;
-            margin-right: 15px;
+        .fas, input{
+            position: absolute;
+            right: 29px;
         }
     }
     .carte{

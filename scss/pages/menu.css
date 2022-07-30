@@ -28,9 +28,9 @@ main {
   font-size: 28px;
   margin: 0;
 }
-#repas #restoname i {
-  font-size: 25px;
-  margin-right: 15px;
+#repas #restoname .fas, #repas #restoname input {
+  position: absolute;
+  right: 29px;
 }
 #repas .carte {
   display: flex;
@@ -121,7 +121,6 @@ main {
 }
 #repas #commander {
   background: linear-gradient(170deg, #ff79d9 5%, #9256dc 100%);
-  background-color: #ff79d9;
   border-radius: 28px;
   border: none;
   cursor: pointer;
@@ -130,7 +129,6 @@ main {
   padding: 16px;
   margin: 5px 45px 0 45px;
   text-decoration: none;
-  transition: 400ms;
   width: 180px;
   display: flex;
   justify-content: center;
@@ -139,5 +137,4 @@ main {
 #repas #commander:hover {
   background: linear-gradient(170deg, #fface7 5%, #ad80e5 100%);
   box-shadow: 0px 6px 7px 0px #bbbbbb;
-  transition: 400ms;
 }/*# sourceMappingURL=menu.css.map */
