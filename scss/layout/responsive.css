@@ -54,4 +54,11 @@
     margin: 15px 0px;
     width: 100%;
   }
+  #restaurant #restocards {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  #restaurant #restocards a {
+    width: 24%;
+  }
 }/*# sourceMappingURL=responsive.css.map */

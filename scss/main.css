@@ -491,6 +491,13 @@ main {
     margin: 15px 0px;
     width: 100%;
   }
+  #restaurant #restocards {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  #restaurant #restocards a {
+    width: 24%;
+  }
 }
 #entrees {
   -webkit-animation: fadeentrees 0.8s;

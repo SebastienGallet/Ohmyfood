@@ -73,6 +73,18 @@
                 width: 100%;
             }
         }
+        }
+    }
+#restaurant{
+    #restocards{
+        display: flex;
+        flex-wrap: nowrap;
+        a{
+            width: 24%;
+        }
     }
 }
 }
+
+
+
