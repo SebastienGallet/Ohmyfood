@@ -1,0 +1,76 @@
+#entrees {
+  -webkit-animation: fadeentrees 0.8s;
+          animation: fadeentrees 0.8s;
+}
+
+#plats {
+  -webkit-animation: fadeplats 1s;
+          animation: fadeplats 1s;
+}
+
+#desserts {
+  -webkit-animation: fadedesserts 1.3s;
+          animation: fadedesserts 1.3s;
+}
+
+@-webkit-keyframes fadeentrees {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeentrees {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes fadeplats {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeplats {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes fadedesserts {
+  0% {
+    opacity: 0;
+    transform: translateY(150px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadedesserts {
+  0% {
+    opacity: 0;
+    transform: translateY(150px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}/*# sourceMappingURL=fadein.css.map */

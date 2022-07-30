@@ -1,4 +1,4 @@
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 710px) {
     /*-----INDEX------*/
 
     nav{
@@ -52,6 +52,26 @@
         justify-content: space-between;
         margin-top: 25px;
 
+    }
+}
+}
+
+
+@media screen and (min-width: 1150px){
+    #repas{
+        #globalcard{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        .carte{
+            justify-content: flex-start;
+            width: 30%;
+        }
+        .menu{
+            .buttonfood{
+                margin: 15px 0px;
+            }
+        }
     }
 }
 }

@@ -70,10 +70,10 @@ footer #footerlinks a i {
   font-size: 12px;
 }
 
-#restocards .far, #restocards .fas, #repas .far, #repas .fas {
+#restoname .far, #restoname .fas, #restocards a .far, #restocards a .fas {
   font-size: 25px;
 }
-#restocards .fas, #repas .fas {
+#restoname .fas, #restocards a .fas {
   z-index: 1;
   background: linear-gradient(170deg, #ff79d9 5%, #9256dc 100%);
   -webkit-background-clip: text;
@@ -82,23 +82,23 @@ footer #footerlinks a i {
   opacity: 0;
   transition: 400ms;
 }
-#restocards .far, #repas .far {
+#restoname .far, #restocards a .far {
   z-index: 2;
   margin-right: 15px;
   transition: 400ms;
 }
-#restocards input, #repas input {
+#restoname input, #restocards a input {
   height: 25px;
   width: 25px;
   cursor: pointer;
   opacity: 0;
   z-index: 4;
 }
-#restocards input:checked ~ .fas, #repas input:checked ~ .fas {
+#restoname input:checked ~ .fas, #restocards a input:checked ~ .fas {
   opacity: 1;
   transition: 400ms;
 }
-#restocards input:checked ~ .far, #repas input:checked ~ .far {
+#restoname input:checked ~ .far, #restocards a input:checked ~ .far {
   opacity: 0;
   transition: 400ms;
 }
@@ -390,7 +390,7 @@ main {
   margin-right: -70px;
   border-radius: 0 15px 15px 0;
 }
-#repas .carte .menu .buttonfood .check i {
+#repas .carte .menu .buttonfood .check .fas {
   color: #99e2d0;
   padding: 6px;
   border-radius: 50%;
@@ -425,6 +425,62 @@ main {
   box-shadow: 0px 6px 7px 0px #bbbbbb;
 }
 
+@media screen and (min-width: 710px) {
+  /*-----INDEX------*/
+  nav {
+    height: auto;
+  }
+  nav #filtre {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  #restaurant #restocards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #restaurant #restocards a {
+    width: 45%;
+  }
+  #restaurant #restocards a img {
+    width: 100%;
+  }
+  /*-----PAGE DE RESTO------*/
+  #repas .carte .menu {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  #repas .carte .menu .buttonfood {
+    width: 30%;
+    min-width: 330px;
+    margin: 15px auto;
+  }
+  /*-----FOOTER------*/
+  footer h2 {
+    display: flex;
+    justify-content: center;
+  }
+  footer #footerlinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 25px;
+  }
+}
+@media screen and (min-width: 1150px) {
+  #repas #globalcard {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  #repas #globalcard .carte {
+    justify-content: flex-start;
+    width: 30%;
+  }
+  #repas #globalcard .menu .buttonfood {
+    margin: 15px 0px;
+  }
+}
 #entrees {
   -webkit-animation: fadeentrees 0.8s;
           animation: fadeentrees 0.8s;
@@ -499,71 +555,5 @@ main {
   100% {
     opacity: 1;
     transform: translateY(0);
-  }
-}
-/*@-webkit-keyframes fade-in-top {
-    0% {
-      -webkit-transform: translateY(-50px);
-              transform: translateY(-50px);
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: translateY(0);
-              transform: translateY(0);
-      opacity: 1;
-    }
-  }
-  @keyframes fade-in-top {
-    0% {
-      -webkit-transform: translateY(-50px);
-              transform: translateY(-50px);
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: translateY(0);
-              transform: translateY(0);
-      opacity: 1;
-    }
-  }*/
-@media screen and (min-width: 700px) {
-  /*-----INDEX------*/
-  nav {
-    height: auto;
-  }
-  nav #filtre {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  #restaurant #restocards {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  #restaurant #restocards a {
-    width: 45%;
-  }
-  #restaurant #restocards a img {
-    width: 100%;
-  }
-  /*-----PAGE DE RESTO------*/
-  #repas .carte .menu {
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  #repas .carte .menu .buttonfood {
-    width: 30%;
-    min-width: 330px;
-    margin: 15px auto;
-  }
-  /*-----FOOTER------*/
-  footer h2 {
-    display: flex;
-    justify-content: center;
-  }
-  footer #footerlinks {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 25px;
   }
 }/*# sourceMappingURL=main.css.map */

@@ -108,7 +108,7 @@ main {
   margin-right: -70px;
   border-radius: 0 15px 15px 0;
 }
-#repas .carte .menu .buttonfood .check i {
+#repas .carte .menu .buttonfood .check .fas {
   color: #99e2d0;
   padding: 6px;
   border-radius: 50%;
@@ -141,105 +141,4 @@ main {
 #repas #commander:hover {
   background: linear-gradient(170deg, #fface7 5%, #ad80e5 100%);
   box-shadow: 0px 6px 7px 0px #bbbbbb;
-}
-
-#entrees {
-  -webkit-animation: fadeentrees 0.8s;
-          animation: fadeentrees 0.8s;
-}
-
-#plats {
-  -webkit-animation: fadeplats 1s;
-          animation: fadeplats 1s;
-}
-
-#desserts {
-  -webkit-animation: fadedesserts 1.3s;
-          animation: fadedesserts 1.3s;
-}
-
-@-webkit-keyframes fadeentrees {
-  0% {
-    opacity: 0;
-    transform: translateY(50px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes fadeentrees {
-  0% {
-    opacity: 0;
-    transform: translateY(50px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-@-webkit-keyframes fadeplats {
-  0% {
-    opacity: 0;
-    transform: translateY(100px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-@keyframes fadeplats {
-  0% {
-    opacity: 0;
-    transform: translateY(100px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-@-webkit-keyframes fadedesserts {
-  0% {
-    opacity: 0;
-    transform: translateY(150px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-@keyframes fadedesserts {
-  0% {
-    opacity: 0;
-    transform: translateY(150px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-/*@-webkit-keyframes fade-in-top {
-    0% {
-      -webkit-transform: translateY(-50px);
-              transform: translateY(-50px);
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: translateY(0);
-              transform: translateY(0);
-      opacity: 1;
-    }
-  }
-  @keyframes fade-in-top {
-    0% {
-      -webkit-transform: translateY(-50px);
-              transform: translateY(-50px);
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: translateY(0);
-              transform: translateY(0);
-      opacity: 1;
-    }
-  }*//*# sourceMappingURL=menu.css.map */
+}/*# sourceMappingURL=menu.css.map */
