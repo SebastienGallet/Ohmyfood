@@ -13,7 +13,7 @@ font-family: 'Shrikhand', cursive;
   }
 }
 body {
-  max-width: 1280px;
+  /*max-width: 1280px;*/
   margin: 0 auto;
 }
 
@@ -479,6 +479,7 @@ main {
   }
   #repas #globalcard .menu .buttonfood {
     margin: 15px 0px;
+    width: 100%;
   }
 }
 #entrees {
