@@ -19,18 +19,28 @@ body {
 
 header {
   position: relative;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 6px 13px -7px rgb(153, 153, 153);
+}
+header h1 {
+  margin: 0;
 }
 header h1 img {
   display: block;
-  margin: auto;
+  margin: 0 auto;
+  height: 100%;
   width: 45%;
   max-width: 200px;
+  padding: 16px;
 }
 header #back {
   border: none;
   background-color: transparent;
   position: absolute;
-  bottom: 10%;
+  bottom: 30%;
+  left: 4%;
   text-decoration: none;
   transform: scale(1);
   transition: 400ms;
