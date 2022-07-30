@@ -71,6 +71,10 @@ main {
   justify-content: space-evenly;
   width: 100%;
   height: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 #repas .carte .menu .buttonfood .description em {
   font-size: 17px;
@@ -137,4 +141,105 @@ main {
 #repas #commander:hover {
   background: linear-gradient(170deg, #fface7 5%, #ad80e5 100%);
   box-shadow: 0px 6px 7px 0px #bbbbbb;
-}/*# sourceMappingURL=menu.css.map */
+}
+
+#entrees {
+  -webkit-animation: fadeentrees 0.8s;
+          animation: fadeentrees 0.8s;
+}
+
+#plats {
+  -webkit-animation: fadeplats 1s;
+          animation: fadeplats 1s;
+}
+
+#desserts {
+  -webkit-animation: fadedesserts 1.3s;
+          animation: fadedesserts 1.3s;
+}
+
+@-webkit-keyframes fadeentrees {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeentrees {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes fadeplats {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeplats {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes fadedesserts {
+  0% {
+    opacity: 0;
+    transform: translateY(150px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadedesserts {
+  0% {
+    opacity: 0;
+    transform: translateY(150px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/*@-webkit-keyframes fade-in-top {
+    0% {
+      -webkit-transform: translateY(-50px);
+              transform: translateY(-50px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in-top {
+    0% {
+      -webkit-transform: translateY(-50px);
+              transform: translateY(-50px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }*//*# sourceMappingURL=menu.css.map */

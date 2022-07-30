@@ -69,3 +69,73 @@ main{
     }
 }
 
+#entrees{
+    animation: fadeentrees 0.8s;
+}
+
+#plats{
+    animation: fadeplats 1s;
+}
+
+#desserts{
+    animation: fadedesserts 1.3s;
+}
+
+@keyframes fadeentrees {
+    0% {
+        opacity:0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity:1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeplats {
+    0% {
+        opacity:0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity:1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadedesserts {
+    0% {
+        opacity:0;
+        transform: translateY(150px);
+    }
+    100% {
+        opacity:1;
+        transform: translateY(0);
+    }
+}
+
+/*@-webkit-keyframes fade-in-top {
+    0% {
+      -webkit-transform: translateY(-50px);
+              transform: translateY(-50px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in-top {
+    0% {
+      -webkit-transform: translateY(-50px);
+              transform: translateY(-50px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }*/
+

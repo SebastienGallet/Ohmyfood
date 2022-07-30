@@ -70,13 +70,10 @@ footer #footerlinks a i {
   font-size: 12px;
 }
 
-.far, .fas {
+#restocards .far, #restocards .fas, #repas .far, #repas .fas {
   font-size: 25px;
 }
-
-.fas {
-  /*position: absolute;*/
-  /*right: 29px;*/
+#restocards .fas, #repas .fas {
   z-index: 1;
   background: linear-gradient(170deg, #ff79d9 5%, #9256dc 100%);
   -webkit-background-clip: text;
@@ -85,27 +82,23 @@ footer #footerlinks a i {
   opacity: 0;
   transition: 400ms;
 }
-
-.far {
+#restocards .far, #repas .far {
   z-index: 2;
   margin-right: 15px;
   transition: 400ms;
 }
-
-input {
-  /*position: absolute;*/
-  /*right: 29px;*/
+#restocards input, #repas input {
   height: 25px;
   width: 25px;
   cursor: pointer;
   opacity: 0;
   z-index: 4;
 }
-input:checked ~ .fas {
+#restocards input:checked ~ .fas, #repas input:checked ~ .fas {
   opacity: 1;
   transition: 400ms;
 }
-input:checked ~ .far {
+#restocards input:checked ~ .far, #repas input:checked ~ .far {
   opacity: 0;
   transition: 400ms;
 }
@@ -239,7 +232,7 @@ nav #filtre button:hover {
   box-shadow: 0px 6px 7px 0px #d4d4d4;
   border-radius: 15px;
   display: grid;
-  grid-template: 70% 30%/80% 20%;
+  grid-template: 70% 30%/75% 25%;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   text-decoration: none;
@@ -360,6 +353,10 @@ main {
   justify-content: space-evenly;
   width: 100%;
   height: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 #repas .carte .menu .buttonfood .description em {
   font-size: 17px;
@@ -428,6 +425,106 @@ main {
   box-shadow: 0px 6px 7px 0px #bbbbbb;
 }
 
+#entrees {
+  -webkit-animation: fadeentrees 0.8s;
+          animation: fadeentrees 0.8s;
+}
+
+#plats {
+  -webkit-animation: fadeplats 1s;
+          animation: fadeplats 1s;
+}
+
+#desserts {
+  -webkit-animation: fadedesserts 1.3s;
+          animation: fadedesserts 1.3s;
+}
+
+@-webkit-keyframes fadeentrees {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeentrees {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes fadeplats {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeplats {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes fadedesserts {
+  0% {
+    opacity: 0;
+    transform: translateY(150px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadedesserts {
+  0% {
+    opacity: 0;
+    transform: translateY(150px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/*@-webkit-keyframes fade-in-top {
+    0% {
+      -webkit-transform: translateY(-50px);
+              transform: translateY(-50px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in-top {
+    0% {
+      -webkit-transform: translateY(-50px);
+              transform: translateY(-50px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }*/
 @media screen and (min-width: 700px) {
   /*-----INDEX------*/
   nav {

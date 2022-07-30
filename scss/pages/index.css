@@ -127,7 +127,7 @@ nav #filtre button:hover {
   box-shadow: 0px 6px 7px 0px #d4d4d4;
   border-radius: 15px;
   display: grid;
-  grid-template: 70% 30%/80% 20%;
+  grid-template: 70% 30%/75% 25%;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   text-decoration: none;
