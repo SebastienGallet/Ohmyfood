@@ -199,7 +199,7 @@ nav #filtre button {
   align-items: center;
   cursor: pointer;
 }
-nav #filtre button p {
+nav #filtre button .number {
   float: left;
   margin-left: -19px;
   font-size: 15px;
@@ -215,7 +215,7 @@ nav #filtre button p {
 nav #filtre button i {
   margin: auto;
 }
-nav #filtre button span {
+nav #filtre button .fonction {
   font-size: 16px;
   margin: 0 20px;
   color: black;

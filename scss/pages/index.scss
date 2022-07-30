@@ -69,7 +69,7 @@ nav{
             display: flex;
             align-items: center;
             cursor: pointer;
-            p{
+            .number{
                 float: left;
                 margin-left: -19px;
                 font-size: 15px;
@@ -85,7 +85,7 @@ nav{
             i{
                 margin: auto;
             }   
-            span{
+            .fonction{
                 font-size: 16px;
                 margin: 0 20px;
                 color: black;
