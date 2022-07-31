@@ -1,7 +1,7 @@
-#restoname .far, #restoname .fas, #restocards a .far, #restocards a .fas {
+#restoname .far, #restoname .fas, #restocards .card .far, #restocards .card .fas {
   font-size: 25px;
 }
-#restoname .fas, #restocards a .fas {
+#restoname .fas, #restocards .card .fas {
   z-index: 1;
   background: linear-gradient(170deg, #ff79d9 5%, #9256dc 100%);
   -webkit-background-clip: text;
@@ -10,23 +10,23 @@
   opacity: 0;
   transition: 400ms;
 }
-#restoname .far, #restocards a .far {
+#restoname .far, #restocards .card .far {
   z-index: 2;
   margin-right: 15px;
   transition: 400ms;
 }
-#restoname input, #restocards a input {
+#restoname input, #restocards .card input {
   height: 25px;
   width: 25px;
   cursor: pointer;
   opacity: 0;
   z-index: 4;
 }
-#restoname input:checked ~ .fas, #restocards a input:checked ~ .fas {
+#restoname input:checked ~ .fas, #restocards .card input:checked ~ .fas {
   opacity: 1;
   transition: 400ms;
 }
-#restoname input:checked ~ .far, #restocards a input:checked ~ .far {
+#restoname input:checked ~ .far, #restocards .card input:checked ~ .far {
   opacity: 0;
   transition: 400ms;
 }/*# sourceMappingURL=coeur.css.map */

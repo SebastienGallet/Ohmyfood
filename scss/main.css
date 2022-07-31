@@ -80,10 +80,10 @@ footer #footerlinks a i {
   font-size: 12px;
 }
 
-#restoname .far, #restoname .fas, #restocards a .far, #restocards a .fas {
+#restoname .far, #restoname .fas, #restocards .card .far, #restocards .card .fas {
   font-size: 25px;
 }
-#restoname .fas, #restocards a .fas {
+#restoname .fas, #restocards .card .fas {
   z-index: 1;
   background: linear-gradient(170deg, #ff79d9 5%, #9256dc 100%);
   -webkit-background-clip: text;
@@ -92,23 +92,23 @@ footer #footerlinks a i {
   opacity: 0;
   transition: 400ms;
 }
-#restoname .far, #restocards a .far {
+#restoname .far, #restocards .card .far {
   z-index: 2;
   margin-right: 15px;
   transition: 400ms;
 }
-#restoname input, #restocards a input {
+#restoname input, #restocards .card input {
   height: 25px;
   width: 25px;
   cursor: pointer;
   opacity: 0;
   z-index: 4;
 }
-#restoname input:checked ~ .fas, #restocards a input:checked ~ .fas {
+#restoname input:checked ~ .fas, #restocards .card input:checked ~ .fas {
   opacity: 1;
   transition: 400ms;
 }
-#restoname input:checked ~ .far, #restocards a input:checked ~ .far {
+#restoname input:checked ~ .far, #restocards .card input:checked ~ .far {
   opacity: 0;
   transition: 400ms;
 }
@@ -187,7 +187,7 @@ nav #filtre {
   padding: 20px 0 50px 0;
 }
 nav #filtre button {
-  width: 310px;
+  width: 90%;
   height: 75px;
   border-radius: 20px;
   box-shadow: 0px 6px 7px 0px #d4d4d4;
@@ -236,7 +236,7 @@ nav #filtre button:hover {
 }
 #restaurant .card {
   background-color: white;
-  width: 330px;
+  width: 90%;
   height: 250px;
   margin: 25px auto;
   box-shadow: 0px 6px 7px 0px #d4d4d4;
@@ -288,6 +288,13 @@ nav #filtre button:hover {
   font-size: 14px;
   font-weight: bold;
   color: #0f9070;
+}
+#restaurant .card a {
+  grid-area: 1/1/1/3;
+  text-decoration: none;
+}
+#restaurant .card a:visited {
+  text-decoration: none;
 }
 
 main {
@@ -448,10 +455,10 @@ main {
     display: flex;
     flex-wrap: wrap;
   }
-  #restaurant #restocards a {
+  #restaurant #restocards .card {
     width: 45%;
   }
-  #restaurant #restocards a img {
+  #restaurant #restocards .card img {
     width: 100%;
   }
   /*-----PAGE DE RESTO------*/
@@ -495,7 +502,7 @@ main {
     display: flex;
     flex-wrap: nowrap;
   }
-  #restaurant #restocards a {
+  #restaurant #restocards .card {
     width: 24%;
   }
 }

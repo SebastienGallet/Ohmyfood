@@ -11,10 +11,10 @@
     display: flex;
     flex-wrap: wrap;
   }
-  #restaurant #restocards a {
+  #restaurant #restocards .card {
     width: 45%;
   }
-  #restaurant #restocards a img {
+  #restaurant #restocards .card img {
     width: 100%;
   }
   /*-----PAGE DE RESTO------*/
@@ -58,7 +58,7 @@
     display: flex;
     flex-wrap: nowrap;
   }
-  #restaurant #restocards a {
+  #restaurant #restocards .card {
     width: 24%;
   }
 }/*# sourceMappingURL=responsive.css.map */

@@ -13,7 +13,7 @@
             #restocards{
                 display: flex;
                 flex-wrap: wrap;
-                a{
+                .card{
                     width: 45%;
                     img{
                         width: 100%;
@@ -79,7 +79,7 @@
     #restocards{
         display: flex;
         flex-wrap: nowrap;
-        a{
+        .card{
             width: 24%;
         }
     }

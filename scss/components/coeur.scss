@@ -1,7 +1,7 @@
 @import '../utils/mixins.scss';
 @import '../utils/variables.scss';
 
-#restoname, #restocards a{
+#restoname, #restocards .card{
     .far, .fas{
         font-size: 25px;
     }
