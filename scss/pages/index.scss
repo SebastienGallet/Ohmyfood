@@ -1,5 +1,6 @@
 @import '../utils/mixins.scss';
 @import '../utils/variables.scss';
+@import '../components/buttons.scss';
 /*@import '../layout/loader.scss';*/
 /*---------------------------------------------------------
 -------------Ne pas oublier de remettre le loader-----------
@@ -16,9 +17,18 @@
             justify-content: center;
             align-items: center;
             color: $grey-icon;
-            span{
-                font-size: 16px;
-                margin: 0 20px;
+        }
+        input{
+            font-size: 16px;
+            font-weight: bolder;
+            background-color: transparent;
+            border: none;
+            font-family: 'Roboto', sans-serif;
+            margin-left: 20px;
+            width: 150px;
+            ::placeholder{
+                opacity: 1;
+                color: black;
             }
         }
     }

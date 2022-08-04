@@ -115,6 +115,8 @@ footer #footerlinks a i {
   transition: 400ms;
 }
 
+/*-----BOUTON VIOLET-------*/
+/*-----BOUTON CHOIX-----*/
 /*@import '../layout/loader.scss';*/
 /*---------------------------------------------------------
 -------------Ne pas oublier de remettre le loader-----------
@@ -134,9 +136,26 @@ footer #footerlinks a i {
   align-items: center;
   color: rgb(55, 55, 55);
 }
-#intro #localisation i span {
+#intro #localisation input {
   font-size: 16px;
-  margin: 0 20px;
+  font-weight: bolder;
+  background-color: transparent;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  margin-left: 20px;
+  width: 150px;
+}
+#intro #localisation input ::-moz-placeholder {
+  opacity: 1;
+  color: black;
+}
+#intro #localisation input :-ms-input-placeholder {
+  opacity: 1;
+  color: black;
+}
+#intro #localisation input ::placeholder {
+  opacity: 1;
+  color: black;
 }
 #intro #explore {
   display: flex;
