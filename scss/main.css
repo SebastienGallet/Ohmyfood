@@ -7,19 +7,14 @@
 font-family: 'Roboto', sans-serif;
 font-family: 'Shrikhand', cursive;
 */
-@media screen and (max-width: 375px) {
-  body {
-    border: solid 1px red;
-  }
-}
 body {
-  /*max-width: 1280px;*/
+  max-width: 1280px;
   margin: 0 auto;
 }
 
 header {
   position: relative;
-  z-index: 10;
+  z-index: 1;
   width: 100%;
   height: 100%;
   box-shadow: 0px 6px 13px -7px rgb(153, 153, 153);
@@ -189,7 +184,7 @@ footer #footerlinks a i {
   white-space: nowrap;
 }
 #intro #explore button:hover {
-  background: linear-gradient(170deg, #fface7 5%, #ad80e5 100%);
+  background: linear-gradient(170deg, #ff98e2 5%, #ad80e5 100%);
   box-shadow: 0px 6px 7px 0px #bbbbbb;
 }
 
@@ -246,6 +241,7 @@ nav #filtre button .fonction {
 nav #filtre button:hover {
   background-color: rgba(147, 86, 220, 0.13);
   box-shadow: 0px 6px 7px 0px #bbbbbb;
+  color: #9256dc;
 }
 
 #restaurant {
@@ -422,7 +418,7 @@ main {
   height: 85%;
   font-size: 15px;
   font-weight: bolder;
-  margin-right: 20px;
+  padding: 0 20px 0 5px;
 }
 #repas .carte .menu .buttonfood .check {
   min-width: 68px;
@@ -460,13 +456,14 @@ main {
   margin: auto;
   text-decoration: none;
   white-space: nowrap;
+  box-shadow: 0px 6px 7px 0px #d4d4d4;
   width: 180px;
   display: flex;
   justify-content: center;
   margin: 30px auto;
 }
 #repas #commander:hover {
-  background: linear-gradient(170deg, #fface7 5%, #ad80e5 100%);
+  background: linear-gradient(170deg, #ff98e2 5%, #ad80e5 100%);
   box-shadow: 0px 6px 7px 0px #bbbbbb;
 }
 

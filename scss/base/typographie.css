@@ -1,9 +1,4 @@
-@media screen and (max-width: 375px) {
-  body {
-    border: solid 1px red;
-  }
-}
 body {
-  /*max-width: 1280px;*/
+  max-width: 1280px;
   margin: 0 auto;
 }/*# sourceMappingURL=typographie.css.map */

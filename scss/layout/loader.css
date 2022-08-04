@@ -7,13 +7,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  -webkit-animation: loader 0.1s;
-          animation: loader 0.1s;
-  -webkit-animation-delay: 2.9s;
-          animation-delay: 2.9s;
+  -webkit-animation: loader 0.5s;
+          animation: loader 0.5s;
+  -webkit-animation-delay: 3.4s;
+          animation-delay: 3.4s;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
-  z-index: 1;
+  z-index: 2;
 }
 #loader #loading {
   display: flex;

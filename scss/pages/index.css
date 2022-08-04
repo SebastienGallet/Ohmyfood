@@ -67,11 +67,12 @@
   color: #ffffff;
   font-size: 16px;
   padding: 16px;
-  margin: 5px 45px 0 45px;
+  margin: auto;
   text-decoration: none;
+  white-space: nowrap;
 }
 #intro #explore button:hover {
-  background: linear-gradient(170deg, #fface7 5%, #ad80e5 100%);
+  background: linear-gradient(170deg, #ff98e2 5%, #ad80e5 100%);
   box-shadow: 0px 6px 7px 0px #bbbbbb;
 }
 
@@ -128,6 +129,7 @@ nav #filtre button .fonction {
 nav #filtre button:hover {
   background-color: rgba(147, 86, 220, 0.13);
   box-shadow: 0px 6px 7px 0px #bbbbbb;
+  color: #9256dc;
 }
 
 #restaurant {

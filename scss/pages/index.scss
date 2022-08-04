@@ -104,6 +104,7 @@ nav{
             &:hover{
                 background-color: rgba(147,86,220,0.13);
                 @include ombrehover;
+                color: $purple;
             }
         }
     }
