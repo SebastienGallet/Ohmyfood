@@ -44,6 +44,7 @@
   }
 }
 @media screen and (min-width: 1150px) {
+  /*-----PAGE DE RESTO------*/
   #repas #globalcard {
     display: flex;
     justify-content: space-between;
@@ -57,6 +58,7 @@
     margin: 15px 0px;
     width: 100%;
   }
+  /*-----INDEX------*/
   #restaurant #restocards {
     display: flex;
     flex-wrap: nowrap;
